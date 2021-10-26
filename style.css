@@ -1,0 +1,646 @@
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#container {
+    background-image: url("img/bkgr.png");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        background-image: 
+    }
+}
+
+#nav_bar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+}
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: navy;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color:#555;
+}
+
+/*
+#divToShowHide {
+    background-color: white;
+    width: 80%;
+    height: 50px;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*Use this class when you want your content to be hidden*
+.BeforeScroll
+{
+  display: none;
+}
+
+
+*Use this class when you want your content to be shown after some scroll*
+.AfterScroll
+{
+  display: block;
+}
+*/
+
+ul {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    ul {
+        text-align: center;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+li {
+    display: inline;
+    margin-right: 4%;
+    margin-left: 4%;
+    font-family: acumin-pro-wide, sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+li a {
+    text-decoration: none;
+    color: navy;
+    border-top-color: darkblue; 
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+li a:hover {
+    color: darkgray;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    li a {
+        border-top-color: transparent;
+        border-top-style: hidden;
+    }
+}
+
+h3 {
+    color: darkblue;
+    margin: 0;
+    padding: 0;
+    font-family: acumin-pro-wide, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+h1 {
+    color: darkblue;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    font-family: chennai, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+    text-align: left;
+}
+
+p {
+    opacity: 0.8;
+    color: darkblue;
+    font-family: acumin-pro-wide, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: .5px;
+    text-align: left;
+    line-height: 1.7;
+    text-indent: 35px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section1 {
+    width: 30%;
+    height: 500 px;
+    margin: 20 px;
+    padding: 100 px;
+    padding-top: 300px;
+    padding-left: 15%;
+    padding-right: 15px;
+    position: relative;
+    float: left;
+}
+
+@media screen and (max-width: 500px) {
+    #section1 {
+        float: none; 
+        width: 100%;
+        margin-right: 10%;  
+    }
+}
+
+.mockup1 {
+    float:right;
+    width: 60%;
+    position: absolute;
+    top: 1.5%;
+    right: 0px;
+}
+
+@media screen and (max-width: 500px) {
+    .mockup1 {
+        display: none;
+        float: none;
+    }
+}
+
+.mockup-2 {
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .mockup-2 {
+        display: block;
+        width: 90%;
+        float: right;
+    }
+}
+
+.logo {
+    width: 70%;
+    height: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        padding-top: 20%;
+    }
+}
+
+#content {
+    padding-top: 1000px;
+    padding-bottom: 500px;
+}
+
+#section2 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-top: 140px;
+    padding-left: 15%;
+    padding-bottom: 300px;
+}
+
+
+@media screen and (max-width:500px) {
+    #section2 {
+        padding-top: 0px; 
+        padding-bottom: 0px;
+    }
+}
+
+
+#section2text {
+    width: 30%;
+    height: 100%;
+    padding: 0;
+}
+
+#about2 {
+    display: none;
+}
+
+@media screen and (max-width:500px){
+    #section2text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #about2 {
+        display: block;
+        width: 70%;
+        height: 100%;
+        padding-right: 20%;
+        padding-top: 10%; 
+    }
+}
+
+.timelinemobile{
+    display: none;
+}
+
+.timeline {
+    width: 35%;
+    position: relative;
+    right: 25%;
+    padding-top: 5%;
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .timeline {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .timelinemobile {
+        display: block; 
+        padding-top: -100%;
+        float: none;
+        padding-left: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+#section3 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 140px;
+    padding-bottom: 400px;
+}
+
+@media screen and (max-width: 500px){
+    #section3 {
+        padding-left: 15%;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+
+
+#section3text {
+    width: 30%;
+    height: 100%;
+    padding: 0;
+    padding-left: 55%;
+}
+
+.section3-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    #section3text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .section3-mobile {
+        display: block;
+        width: 30%;
+        height: 100%;
+        float: left; 
+        align-content: center; 
+        padding-left: 0;  
+    }
+}
+.mockup2 {
+    width: 50%;
+    position: relative;
+    left: -50px;
+    float: left;
+    top: -50px;
+}
+
+@media screen and (max-width:500px) {
+    .mockup2 {
+        float: none;
+        display: none;
+        left: 0;
+    }
+}
+
+#section4 { 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 140px;
+    padding-left: 15%;
+    padding-bottom: 400px;
+}
+
+#section4textleft {
+    width: 30%;
+    height: 100%;
+    padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+    #section4textleft {
+        display: none;
+    }
+}
+
+.story1 {
+    display: none;
+}
+
+.story2 {
+    display: none;
+}
+
+.story3 {
+    display: none;
+}
+#section4textright {
+    width: 30%;
+    height: 100%;
+    padding: 0;
+    padding-left: 40%;
+}
+
+@media screen and (max-width: 500px) {
+    #section4textright {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .story1 {
+        display: block;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-wdith:500px){
+    .story2 {
+        display: block;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .story3{
+        display: block;
+        width:70%;
+        height: 100%;
+    }
+}
+
+.map1 {
+    width: 60%;
+    position: relative;
+    right: -70px;
+    float: right;
+    margin-top: -130px;
+}
+
+@media screen and (max-width:500px) {
+    .map1 {
+        width: 30%%;
+        float: none;
+        margin-top: 0px;
+        right: 0;
+        display: none;
+    }
+}
+
+.map2 {
+    width: 60%;
+    position: relative;
+    left: -400px;
+    float: left;
+    margin-top: -950px;
+}
+
+@media screen and (max-width: 500px) {
+    .map2 {
+        display: none;
+        width: 30%;
+        margin-top: 0px;
+        right: 0;
+        float: none;
+    }
+}
+
+
+#section5 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-top: 140px;
+    padding-left: 15%;
+    padding-bottom: 300px;
+}
+
+#section5text {
+    width: 30%;
+    height: 100%;
+    padding: 0;
+}
+
+@media screen and (max-width: 500px) {
+    #section5text {
+        width: 70%;
+        height: 100%;
+        float: none;
+        padding-bottom: 10%;
+    }
+}
+
+.download-mobile {
+    display: none;
+}
+
+.download {
+    width: 30%;
+    position: relative;
+    margin-right: 30%;
+    margin-top: -350px;
+    float: right;
+    
+}
+
+@media screen and (max-width: 500px) {
+    .download {
+        float: none;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .download-mobile {
+        display: block;
+        width: 110%;
+        padding-bottom: 10%;
+        
+    }
+}
+#section6 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 140px;
+    padding-bottom: 200px;
+}
+
+@media screen and (max-width: 500px){
+    #section6 {
+        padding-top: 0px; 
+    }
+}
+#section6text {
+    width: 30%;
+    height: 100%;
+    padding: 0;
+    padding-left: 55%;
+}
+
+@media screen and (max-width: 500px) {
+    #section6text {
+        width: 70%;
+        height: 100%;
+        padding-left: 15%;
+    }
+}
+
+#section7 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-top: 140px;
+    padding-left: 15%;
+    padding-bottom: 400px;
+}
+
+#section7text {
+    width: 30%;
+    height: 100%;
+    padding: 0;
+}
+
+.eilaria{
+    width: 10%;
+    float: left;
+    padding-top: 2%;
+    position: relative;
+    left: 0;
+    
+}
+
+@media screen and (max-width: 500px) {
+    .eilaria {
+        display: none;
+    }
+}
+#section7text-e{
+    width: 38%;
+    margin-left: 5%;
+    padding-top: 0%;
+    height: 100%;
+    float: left;
+}
+
+@media screen and (max-width:500px) {
+    #section7text-e {
+        width: 70%;
+        height: 100%;
+        margin-left: 15%;
+        float: none;
+    }
+}
+
+#section7text-k {
+    width: 38%;
+    padding-top:4%;
+    padding-left: 15%;
+    float: left;
+}
+
+@media screen and (max-width: 500px) {
+    #section7text-k {
+        width: 70%;
+        height: 100%;
+        float: none;
+    }
+}
+.kaelyn {
+    width: 10%;
+    padding-top: 6%;
+    padding-left: 80px;
+    position: relative;
+    float: left;
+}
+
+@media screen and (max-width: 500px) {
+    .kaelyn {
+        display: none;
+    }
+}
+
+.footer {
+    width:100%;
+    padding: 0;
+    position: relative;
+}
+
+
+@media only screen and (max-width : 640px) {
+    #nav_bar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    }
+    
+    li {
+    display: block;
+    line-height: 22px;
+    }
+    
+    ul {
+    margin: 0;
+    padding: 0;
+    height: 180px;
+    padding-top: 20px;
+    }
+    
+    #section1, #section2, #section3, #section4, #section5, #section6, #section7     {
+        padding-top: 200px;
+    }
+    
+}
