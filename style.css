@@ -30,6 +30,26 @@ body, div {
     z-index: 1;
     
 }
+
+@media screen and (max-width: 500px) {
+    #nav_bar {
+        display: none;
+    }
+}
+
+#mobile_nav_bar {
+    width: 100%;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+
+@media screen and (min-width: 501px) {
+    #mobile_nav_bar {
+        display: none;
+    }
+}
+
 nav {
     margin-left: auto;
     margin-right: auto;
@@ -39,6 +59,7 @@ nav {
 
 .navbar-fixed-top.scrolled {
   background-color: #fff !important;
+    opacity: 90%;
   transition: background-color 200ms linear;
 }
 
@@ -77,9 +98,9 @@ ul {
     padding-top: 40px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     ul {
-        text-align: center;
+        text-align: left;
         flex-direction: column;
         height: 100%;
     }
@@ -95,24 +116,31 @@ li {
     letter-spacing: 1px;
 }
 
+@media screen and (max-width: 500px) {
+    li {
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    li a:hover {
+        color: navy;
+        text-decoration: none;
+        border: none;
+    }
+}
+
 li a {
     text-decoration: none;
     color: navy;
-    border-top-color: darkblue; 
-    border-top-style: solid;
-    border-top-width: 1px;
 }
 
 li a:hover {
     color: darkgray;
     text-decoration: none;
-}
-
-@media screen and (max-width: 480px) {
-    li a {
-        border-top-color: transparent;
-        border-top-style: hidden;
-    }
+    border-top-color: darkblue; 
+    border-top-style: solid;
+    border-top-width: 1px;
 }
 
 h3 {
@@ -124,6 +152,26 @@ h3 {
     font-style: normal;
     letter-spacing: 1px;
     text-align: left;
+}
+
+@media screen and (max-width: 500px) {
+    .tagline {
+        position: absolute;
+        top: 730px;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    .about-tagline-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-tagline {
+        display: none;
+    }
 }
 
 h1 {
@@ -170,7 +218,6 @@ p {
     #section1 {
         float: none; 
         width: 100%;
-        margin-right: 10%;  
     }
 }
 
@@ -182,6 +229,12 @@ p {
     right: 0px;
 }
 
+.mockup1-mobile {
+    float:right;
+    width: 130%;
+    padding-top: 50px;
+}
+
 @media screen and (max-width: 500px) {
     .mockup1 {
         display: none;
@@ -189,15 +242,10 @@ p {
     }
 }
 
-.mockup-2 {
-    display: none;
-}
-
-@media screen and (max-width: 500px){
-    .mockup-2 {
-        display: block;
-        width: 90%;
-        float: right;
+@media screen and (min-width: 501px) {
+    .mockup1-mobile {
+        display: none;
+        float: none;
     }
 }
 
@@ -208,7 +256,11 @@ p {
 
 @media screen and (max-width: 500px) {
     .logo {
-        padding-top: 20%;
+        width: 60%;
+        position: absolute;
+        top: 600px;
+        left: auto;
+        right: auto;
     }
 }
 
@@ -226,14 +278,12 @@ p {
     padding-bottom: 300px;
 }
 
-
 @media screen and (max-width:500px) {
     #section2 {
-        padding-top: 0px; 
-        padding-bottom: 0px;
+        margin-top: -400px;
+        padding-bottom: 1100px;
     }
 }
-
 
 #section2text {
     width: 30%;
@@ -241,51 +291,49 @@ p {
     padding: 0;
 }
 
-#about2 {
-    display: none;
+@media screen and (max-width:500px){
+    #section2text {
+        float: none;
+        height: 100%;
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:500px){
-    #section2text {
-        display: none;
+    #about1 {
+        display:none;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (min-width:501px){
     #about2 {
-        display: block;
-        width: 70%;
-        height: 100%;
-        padding-right: 20%;
-        padding-top: 10%; 
+        display:none;
     }
-}
-
-.timelinemobile{
-    display: none;
 }
 
 .timeline {
     width: 35%;
     position: relative;
     right: 25%;
-    padding-top: 5%;
     float: right;
 }
 
-@media screen and (max-width: 500px) {
-    .timeline {
+.mobile-timeline {
+    width: 70%;
+    position: absolute;
+    left: 40px;
+    padding-top: 50px;
+}
+
+@media screen and (min-width: 501px) {
+    .mobile-timeline {
         display: none;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .timelinemobile {
-        display: block; 
-        padding-top: -100%;
-        float: none;
-        padding-left: 10%;
-        padding-bottom: 10%;
+    .timeline {
+        display: none;
     }
 }
 
@@ -298,15 +346,11 @@ p {
     padding-bottom: 400px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width:500px) {
     #section3 {
-        padding-left: 15%;
-        width: 70%;
-        height: 100%;
+        padding-bottom: 500px;
     }
 }
-
-
 
 #section3text {
     width: 30%;
@@ -315,26 +359,15 @@ p {
     padding-left: 55%;
 }
 
-.section3-mobile {
-    display: none;
-}
-
 @media screen and (max-width: 500px) {
     #section3text {
-        display: none;
+        float: none;
+        height: 100%;
+        width: 70%;
+        padding-left: 15%;
     }
 }
 
-@media screen and (max-width: 500px){
-    .section3-mobile {
-        display: block;
-        width: 30%;
-        height: 100%;
-        float: left; 
-        align-content: center; 
-        padding-left: 0;  
-    }
-}
 .mockup2 {
     width: 50%;
     position: relative;
@@ -345,9 +378,10 @@ p {
 
 @media screen and (max-width:500px) {
     .mockup2 {
-        float: none;
-        display: none;
-        left: 0;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        width: 100%;
     }
 }
 
@@ -361,6 +395,12 @@ p {
     padding-bottom: 400px;
 }
 
+@media screen and (max-width:500px) {
+    #section4 {
+        padding-bottom: 0px;
+    }
+}
+
 #section4textleft {
     width: 30%;
     height: 100%;
@@ -369,21 +409,12 @@ p {
 
 @media screen and (max-width: 500px) {
     #section4textleft {
-        display: none;
+        float: none;
+        width: 70%;
+        height: 100%;
     }
 }
 
-.story1 {
-    display: none;
-}
-
-.story2 {
-    display: none;
-}
-
-.story3 {
-    display: none;
-}
 #section4textright {
     width: 30%;
     height: 100%;
@@ -393,31 +424,21 @@ p {
 
 @media screen and (max-width: 500px) {
     #section4textright {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 500px){
-    .story1 {
-        display: block;
         width: 70%;
         height: 100%;
+        padding-left: 0;
     }
 }
 
-@media screen and (max-wdith:500px){
-    .story2 {
-        display: block;
-        width: 70%;
-        height: 100%;
+@media screen and (max-width:500px){
+    #users1 {
+        display:none;
     }
 }
 
-@media screen and (max-width: 500px){
-    .story3{
-        display: block;
-        width:70%;
-        height: 100%;
+@media screen and (min-width:501px){
+    #users2 {
+        display:none;
     }
 }
 
@@ -431,10 +452,6 @@ p {
 
 @media screen and (max-width:500px) {
     .map1 {
-        width: 30%%;
-        float: none;
-        margin-top: 0px;
-        right: 0;
         display: none;
     }
 }
@@ -450,10 +467,18 @@ p {
 @media screen and (max-width: 500px) {
     .map2 {
         display: none;
-        width: 30%;
-        margin-top: 0px;
-        right: 0;
-        float: none;
+    }
+}
+
+.maps-mobile {
+    width: 200%;
+    margin-left: -150px;
+    padding-bottom: 40px;
+}
+
+@media screen and (min-width: 501px) {
+    .maps-mobile {
+        display: none;
     }
 }
 
@@ -478,12 +503,20 @@ p {
         width: 70%;
         height: 100%;
         float: none;
-        padding-bottom: 10%;
+        padding-bottom: 15%;
     }
 }
 
-.download-mobile {
-    display: none;
+@media screen and (max-width:500px){
+    #download1 {
+        display:none;
+    }
+}
+
+@media screen and (min-width:501px){
+    #download2 {
+        display:none;
+    }
 }
 
 .download {
@@ -502,14 +535,21 @@ p {
     }
 }
 
-@media screen and (max-width: 500px) {
+.download-mobile {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -400px;
+    
+}
+
+@media screen and (min-width: 501px) {
     .download-mobile {
-        display: block;
-        width: 110%;
-        padding-bottom: 10%;
-        
+        float: none;
+        display: none;
     }
 }
+
 #section6 {
     width: 100%;
     height: 100%;
@@ -519,11 +559,12 @@ p {
     padding-bottom: 200px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     #section6 {
-        padding-top: 0px; 
+        padding-bottom: 0px;
     }
 }
+
 #section6text {
     width: 30%;
     height: 100%;
@@ -539,13 +580,35 @@ p {
     }
 }
 
+.marma {
+    width: 50%;
+    float: left;
+    margin-top: -460px;
+    margin-left: -11%;
+    opacity: 50%;
+}
+
+@media screen and (max-width: 500px) {
+    .marma {
+        position: relative;
+        float: none;
+        margin-top: 30px;
+        width: 120%;
+    }
+}
+
 #section7 {
     width: 100%;
     height: 100%;
     padding: 0;
     padding-top: 140px;
     padding-left: 15%;
-    padding-bottom: 400px;
+}
+
+@media screen and (max-width: 500px) {
+    #section7 {
+        padding-bottom: 0px;
+    }
 }
 
 #section7text {
@@ -565,13 +628,18 @@ p {
 
 @media screen and (max-width: 500px) {
     .eilaria {
-        display: none;
+        position: absolute;
+        margin-left: 340px;
+        margin-top: -70px;
+        width: 22%;
     }
 }
+
 #section7text-e{
     width: 38%;
     margin-left: 5%;
     padding-top: 0%;
+    padding-bottom: 0px;
     height: 100%;
     float: left;
 }
@@ -580,8 +648,9 @@ p {
     #section7text-e {
         width: 70%;
         height: 100%;
-        margin-left: 15%;
+        margin-left: 0;
         float: none;
+        padding-bottom: 50px
     }
 }
 
@@ -597,19 +666,22 @@ p {
         width: 70%;
         height: 100%;
         float: none;
+        padding-left: 0px;
     }
 }
 .kaelyn {
     width: 10%;
-    padding-top: 6%;
+    padding-top: 17%;
     padding-left: 80px;
     position: relative;
-    float: left;
 }
 
 @media screen and (max-width: 500px) {
     .kaelyn {
-        display: none;
+        position: absolute;
+        margin-top: -550px;
+        margin-left: 170px;
+        width: 22%;
     }
 }
 
