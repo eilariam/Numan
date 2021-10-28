@@ -61,7 +61,7 @@
         
         <div id="nav_bar" class="navbar-fixed-top"><nav>
         <ul>
-            <li><a href="#section1">home</a></li>
+            <li id="homeicon"><a href="#section1"><img class="home" src="img/home.png" href="#section1"/></a></li>
             <li><a href="#section2">about</a></li>
             <li><a href="#section3">features</a></li>
             <li><a href="#section4">users</a></li>
@@ -73,12 +73,12 @@
         
         <div id="mobile_nav_bar"><nav>
         <ul>
-            <li><a href="#section2">about</a></li>
-            <li><a href="#section3">features</a></li>
-            <li><a href="#section4">users</a></li>
-            <li><a href="#section5">download</a></li>
-            <li><a href="#section6">mission</a></li>
-            <li><a href="#section7">team</a></li>
+            <li class="mobile-link"><a href="#section2">about</a></li>
+            <li class="mobile-link"><a href="#section3">features</a></li>
+            <li class="mobile-link"><a href="#section4">users</a></li>
+            <li class="mobile-link"><a href="#section5">download</a></li>
+            <li class="mobile-link"><a href="#section6">mission</a></li>
+            <li class="mobile-link"><a href="#section7">team</a></li>
             </ul></nav>
             </div>
         
@@ -89,11 +89,12 @@
                <img class="logo" src="img/logo-withtagline.png"/>
                 <p>&nbsp;</p>
                 <h3 class="tagline">The future of self-teaching AI meets the history of culture.</h3> 
+            <div><a href="#section1"><img class="back-top" src="img/back-to-top.png"></a></div>
         </div>
         <div><img class="mockup1" src="img/mockup.png" alt=""/></div>
         <div id="content">
         <div id="section2">
-            <div><img class="timeline" src="img/website-timeline.png" alt=""/></div>
+            <div><img class="timeline" src="img/web-timeline.png" alt=""/></div>
             <div id="section2text">
             <h1>about</h1><br>
             <h3 class="about-tagline">Learning, teaching, and preserving,<br>all found in one smart program.</h3>
@@ -108,6 +109,7 @@
         </div>
         <div id="section3">
             <div><img class="mockup2" src="img/mockup-2.png" alt=""/></div>
+            <div><img class="mockup2flip" src="img/mockup-2-flip.png" alth=""/></div>
             <div id="section3text">
             <h1>features</h1><br>
                 <!-- I don't think the features paragraphs as they are normally are too long for the mobile version, I think we can just keep them the same instead of shortening them. If you disagree feel free to edit!! -->
@@ -117,22 +119,31 @@
             <div><img class="mockup1-mobile" src="img/mockup.png" alt=""/></div>
         </div>
         <div id="section4">
-            <div><img class="map1" src="img/map-right.png" alt=""/></div>
+            <div><img class="map1" src="img/map-right.png" alt=""/>
+            <div class="location-hover"><img class="location1" src="img/location.png">
+                <span class="location-h-image"><img class="nihali-hover" src="img/nihali-hover.png"></span>
+            </div>
+            </div>
             <div id="section4textleft">
             <h1>users</h1><br>
+            <img class="gautum" src="img/gautum.png">
             <p id="users1">Gautam is a native speaker of Nihali, along with only 2,000 others in central India. At seventy years old, he’s watched the number of Nihali speakers slowly dwindle over the course of his lifetime and worries that his tribe will soon lose the ability to pass on the legacy of their history through written texts and documentation. While also fluent in Hindi, Gautam knows that teaching a language is outside the scope of his skills and instead searches for someone to help prolong the life of Nihali culture. He finds Numan through his granddaughter, who shows him how to talk into her smartphone in Nihali and help the AI translate the words into Hindi. Every other day for the next year, Gautam spends twenty minutes having a conversation with Numan in Nihali and Hindi, confirming spelling and pronunciation as he goes, until the app notifies him that it has learned enough Nihali to send the language to its database and teach it to others who have the app. Now Gautam knows that his native language is catalogued somewhere and will not die out, even if the remaining native speakers are unable to teach Nihali to new generations.</p>
             <p id="users2">Gautam is a native speaker of Nihali, along with only 2,000 others in central India. At seventy years old, he’s watched the number of Nihali speakers slowly dwindle over the course of his lifetime, but knows that teaching a language is outside the scope of his skills. Every other day for the next year, Gautam spends twenty minutes having a conversation with Numan in Nihali and Hindi, confirming spelling and pronunciation as he goes, until the app notifies him that it has learned enough Nihali to send the language to its database and teach it to others who have the app. Now Gautam knows that his native language is catalogued somewhere and will not die out, even if the remaining native speakers are unable to teach Nihali to new generations.</p>
             </div>
             <div id="section4textright">
             <p>&nbsp;</p>
+            <img class="charlotte" src="img/charlotte.png">
             <p id="users1"> Charlotte is a fifty year old linguistics professor who teaches a class on moribund languages at the University of Oxford. During her career, she has become fascinated with Amazonian dialects and learns of an endangered language called Wari, spoken by around 3,000 people in the Rondonian region of Brazil, that she is interested in learning and sharing with her students. Although most of the Wari people also speak Portuguese, there are very few documents to aid in learning the language and Charlotte thinks she’s reached a dead end. However, one of her students introduces her to Numan, which recently learned the language by conversing with one of the native speakers in Wari and Portuguese to translate it into English. After downloading the app, Charlotte is able to learn and share an example of a moribund Amazonian language with her class.</p>
             <div><img class="maps-mobile" src="img/maps-mobile.png"></div>
             <p id="users2"> Charlotte is a fifty year old linguistics professor who teaches a class on moribund languages at the University of Oxford. She learns of an endangered language called Wari, spoken by around 3,000 people in the Rondonian region of Brazil, that she is interested in learning and sharing with her students. Although most of the Wari people also speak Portuguese, there are very few documents to aid in learning the language and Charlotte thinks she’s reached a dead end. However, Numan recently learned the language by conversing with one of the native speakers, and Charlotte is able to learn Wari and share an example of a moribund Amazonian language with her class.</p>
             <p>&nbsp;</p>
+            <img class="daniel" src="img/daniel.png">
             <p id="users1">Daniel is a thirty year old descendant of the Kutenai people of Montana and British Columbia, and the grandson of one of twelve people who can still speak the native language. His grandmother is an amazing storyteller, but most of her culture’s myths are only understandable in the Kutenai language and are therefore inaccessible to Daniel. For years he’s been trying to convince his grandmother to teach him the language so that he can feel closer to his own family and the history of his ancestors, but although she herself is fluent in both English and Kutenai, she doesn’t know how to teach more than a few vocabulary words. With Numan, Daniel is able to have his grandmother speak into her laptop and have conversations with the self-teaching AI that powers the app. After six months Numan has listened to enough Kutenai and understands the syntax and vocabulary, and is ready to teach Daniel.</p>
             <p id="users2">Daniel is a thirty year old descendant of the Kutenai people of Montana and British Columbia, and the grandson of one of twelve people who can still speak the native language. His grandmother is an amazing storyteller, but most of her culture’s myths are only understandable in the Kutenai language and are therefore inaccessible to Daniel. Although she is fluent in both English and Kutenai, she doesn’t know how to teach more than a few vocabulary words. With Numan, Daniel is able to have his grandmother speak into her laptop and have conversations with the self-teaching AI that powers the app. After six months Numan has listened to enough Kutenai and understands the syntax and vocabulary, and is ready to teach Daniel.</p>
             </div>
-            <div><img class="map2" src="img/map-left.png" alt=""/></div>
+            <div><img class="location2" src="img/location.png">
+            <img class="location3" src="img/location.png">
+            <img class="map2" src="img/map-left.png" alt=""/></div>
         </div>
         <div id="section5">
             <div id="section5text">
