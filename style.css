@@ -219,7 +219,7 @@ p {
     margin: 20 px;
     padding: 100 px;
     padding-top: 300px;
-    padding-left: 15%;
+    padding-left: 18%;
     padding-right: 15px;
     position: relative;
     float: left;
@@ -260,6 +260,21 @@ p {
     }
 }
 
+.mockup1a {
+    float:left;
+    width: 26.3%;
+    position: absolute;
+    top: 1.5%;
+    left: -100px;
+}
+
+@media screen and (max-width: 500px) {
+    .mockup1a {
+        display: none;
+        float: none;
+    }
+}
+
 .logo {
     width: 70%;
     height: auto;
@@ -292,7 +307,7 @@ p {
     height: 100%;
     padding: 0;
     padding-top: 140px;
-    padding-left: 15%;
+    padding-left: 13%;
     padding-bottom: 300px;
 }
 
@@ -334,14 +349,14 @@ p {
 .timeline {
     width: 35%;
     position: relative;
-    right: 25%;
+    right: 26%;
     float: right;
 }
 
 .mobile-timeline {
     width: 70%;
     position: absolute;
-    left: 40px;
+    left: 60px;
     padding-top: 50px;
 }
 
@@ -392,7 +407,7 @@ p {
 .mockup2 {
     width: 50%;
     position: relative;
-    left: -50px;
+    left: 50px;
     float: left;
     top: -50px;
 }
@@ -425,8 +440,8 @@ p {
     margin: 0;
     padding: 0;
     padding-top: 140px;
-    padding-left: 15%;
-    padding-bottom: 400px;
+    padding-left: 13%;
+    padding-bottom: 350px;
 }
 
 @media screen and (max-width:500px) {
@@ -438,7 +453,7 @@ p {
 .gautum {
     position: absolute;
     top: 42%;
-    left: 39%;
+    left: 37%;
     opacity: 30%;
     width: 15%;
 }
@@ -447,7 +462,7 @@ p {
     .gautum {
         position: absolute;
         top: 4530px;
-        left: 320px;
+        left: 340px;
         width: 25%;
     }
 }
@@ -463,8 +478,8 @@ p {
 @media screen and (max-width:500px) {
     .charlotte {
         position: absolute;
-        top: 5470px;
-        left: 320px;
+        top: 5500px;
+        left: 340px;
         width: 25%;
     }
 }
@@ -480,8 +495,8 @@ p {
 @media screen and (max-width:500px) {
     .daniel {
         position: absolute;
-        top: 5950px;
-        left: 320px;
+        top: 5990px;
+        left: 340px;
         width: 25%;
     }
 }
@@ -504,7 +519,7 @@ p {
     width: 30%;
     height: 100%;
     padding: 0;
-    padding-left: 40%;
+    padding-left: 43%;
 }
 
 @media screen and (max-width: 500px) {
@@ -623,7 +638,7 @@ p {
 .location2 {
     width: 3%;
     position: absolute;
-    left: 33%;
+    left: 31%;
     top: 63%;
     z-index: 2;
 }
@@ -697,7 +712,7 @@ p {
     height: 100%;
     padding: 0;
     padding-top: 140px;
-    padding-left: 15%;
+    padding-left: 13%;
     padding-bottom: 300px;
 }
 
@@ -712,7 +727,7 @@ p {
         width: 70%;
         height: 100%;
         float: none;
-        padding-bottom: 15%;
+        padding-bottom: 5%;
     }
 }
 
@@ -733,8 +748,8 @@ p {
 .download {
     width: 30%;
     position: relative;
-    margin-right: 30%;
-    margin-top: -350px;
+    margin-right: 25%;
+    margin-top: -320px;
     float: right;
     
 }
@@ -750,7 +765,8 @@ p {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: -400px;
+    margin-top: -600px;
+    padding-bottom: 50px;
     
 }
 
@@ -828,7 +844,7 @@ p {
     height: 100%;
     padding: 0;
     padding-top: 140px;
-    padding-left: 15%;
+    padding-left: 13%;
 }
 
 @media screen and (max-width: 500px) {
@@ -883,7 +899,7 @@ p {
 #section7text-k {
     width: 38%;
     padding-top:4%;
-    padding-left: 15%;
+    padding-left: 22%;
     float: left;
 }
 
@@ -915,12 +931,13 @@ p {
     image-resolution: from-image;
     width: 100%;
     padding-top: 180px;
+    bottom: -10px;
     position: relative;
 }
 
 @media screen and (max-width: 500px){
     .footer {
-        padding-top: 0px;
+        padding-top: 150px;
         width: 200%;
         right: 250px;
     }
