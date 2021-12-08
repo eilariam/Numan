@@ -236,14 +236,14 @@ p {
     float:right;
     width: 100%;
     position: absolute;
-    top: -3%;
+    top: -2.2%;
     right: -290px;
 }
 
 .mockup1-mobile {
     float: right;
-    width: 200%;
-    margin-right: -25%;
+    width: 230%;
+    margin-right: -35%;
 }
 
 @media screen and (max-width: 500px) {
@@ -262,9 +262,9 @@ p {
 
 .mockup1a {
     float:left;
-    width: 42%;
+    width: 43%;
     position: absolute;
-    top: -.7%;
+    top: -.4%;
     left: -220px;
 }   
 
@@ -389,11 +389,10 @@ p {
 }
 
 #section3text {
-    width: 70%;
+    float: left;
+    width: 30%;
     height: 100%;
-    padding: 0;
-    padding-left: 17%; 
-    margin-right: 60%;
+    margin-left: -80px; 
 }
 
 @media screen and (max-width: 500px) {
@@ -401,14 +400,14 @@ p {
         float: none;
         height: 100%;
         width: 70%;
-        padding-left: 15%;
+        padding-left: 35%;
     }
 }
 
 .mockup2 {
-    width: 60%;
+    width: 65%;
     position: relative;
-    left: -80px;
+    left: -260px;
     float: left;
     top: -200px;
 }
@@ -422,9 +421,9 @@ p {
 /* mobile home mockup */
 .mockup2flip {
     position: absolute;
-    width: 200%;
-    top: -75px;
-    left: -20px;
+    width: 210%;
+    top: -50px;
+    left: -40px;
 }
 
 /* mobile home mockup */
