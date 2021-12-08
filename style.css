@@ -234,16 +234,16 @@ p {
 
 .mockup1 {
     float:right;
-    width: 60%;
+    width: 100%;
     position: absolute;
-    top: 1.5%;
-    right: 0px;
+    top: -3%;
+    right: -290px;
 }
 
 .mockup1-mobile {
-    float:right;
-    width: 130%;
-    padding-top: 50px;
+    float: right;
+    width: 200%;
+    margin-right: -25%;
 }
 
 @media screen and (max-width: 500px) {
@@ -262,11 +262,11 @@ p {
 
 .mockup1a {
     float:left;
-    width: 26.3%;
+    width: 42%;
     position: absolute;
-    top: 1.5%;
-    left: -100px;
-}
+    top: -.7%;
+    left: -220px;
+}   
 
 @media screen and (max-width: 500px) {
     .mockup1a {
@@ -389,10 +389,11 @@ p {
 }
 
 #section3text {
-    width: 30%;
+    width: 70%;
     height: 100%;
     padding: 0;
-    padding-left: 55%;
+    padding-left: 17%; 
+    margin-right: 60%;
 }
 
 @media screen and (max-width: 500px) {
@@ -405,11 +406,11 @@ p {
 }
 
 .mockup2 {
-    width: 50%;
+    width: 60%;
     position: relative;
-    left: 50px;
+    left: -80px;
     float: left;
-    top: -50px;
+    top: -200px;
 }
 
 @media screen and (max-width:500px){
@@ -639,7 +640,7 @@ p {
     width: 3%;
     position: absolute;
     left: 31%;
-    top: 63.3%;
+    top: 63%;
     z-index: 2;
 }
 
@@ -674,7 +675,7 @@ p {
     width: 3%;
     position: absolute;
     left: 13%;
-    top: 58.4%;
+    top: 58%;
     z-index: 2;
 }
 
